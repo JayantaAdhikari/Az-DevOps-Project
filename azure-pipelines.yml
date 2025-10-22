@@ -10,15 +10,22 @@ pool:
   name: mypool
 
 steps:
+- checkout: self
 - task: NodeTool@0
   inputs:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
 
-
 - checkout: self
 
 - script: |
+    cd frontend
     npm install
     npm run build
   displayName: 'npm install and build'
+
+
+#- script: |
+   # npm install
+    #npm run build
+  #displayName: 'npm install and build'
