@@ -15,6 +15,9 @@ steps:
     versionSpec: '20.x'
   displayName: 'Install Node.js'
 
+
+- checkout: self
+
 - script: |
     npm install
     npm run build
