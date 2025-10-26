@@ -10,4 +10,4 @@ steps:
 - script: |
    cd /home/Jayanta/prod/Az-DevOps-Project/hello-node-api
    npm install
-   displayName: 'Install Dependencies'
+  displayName: 'Install Dependencies'
