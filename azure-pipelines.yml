@@ -8,6 +8,6 @@ steps:
 - checkout: self
 
 - script: |
-   cd hello-node-api
+   cd /home/Jayanta/prod/Az-DevOps-Project/hello-node-api
    npm install
    displayName: 'Install Dependencies'
